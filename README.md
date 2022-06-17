@@ -9,3 +9,6 @@
 #### ここから
 
 [教材のurl](https://www.udemy.com/course/understanding-typescript-jp/learn/lecture/17812928#content)
+
+#### file 
+Desktop/TypeScript/Understanding-ts
