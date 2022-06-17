@@ -6,6 +6,6 @@
 - history | grep @@@
 - history 100
 
-# ここから
+#### ここから
 
 [url](https://www.udemy.com/course/understanding-typescript-jp/learn/lecture/17812928#content)
