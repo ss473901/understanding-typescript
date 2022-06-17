@@ -1,10 +1,18 @@
-function add(n1, n2) {
-    if (typeof n1 !== "number" || typeof n2 !== "number") {
-        throw new Error("\u5165\u529B\u5024\u304C\u6B63\u3057\u304F\u3042\u308A\u307E\u305B\u3093");
+function add(n1, n2, showResult, phrase) {
+    //JavaScriptでのエラーの吐き出し方
+    // if (typeof n1 !== `number` || typeof n2 !== `number`) {
+    //   throw new Error(`入力値が正しくありません`);
+    // }
+    var result = n1 + n2;
+    if (showResult) {
+        console.log(phrase + result);
     }
-    return n1 + n2;
+    else {
+        return result;
+    }
 }
 var number1 = 5;
 var number2 = 2.8;
-var result = add(number1, number2);
-console.log(result);
+var printResult = true;
+var resultPhrase = "Result: ";
+add(number1, number2, printResult, resultPhrase);
