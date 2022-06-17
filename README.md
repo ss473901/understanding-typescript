@@ -1,3 +1,4 @@
+#### 実行したコード
 - npm init
 - npm install --save-dev lite-server
 - npm start
