@@ -6,4 +6,4 @@ tsc app.ts //tsファイルをjsファイルにコンパイル
 
 history | grep @@@
 history 100
-# understanding-typescript
+
