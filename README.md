@@ -1,4 +1,4 @@
-#### 実行したコード
+### 実行したコード
 - npm init
 - npm install --save-dev lite-server
 - npm start
@@ -7,9 +7,9 @@
 - history | grep @@@
 - history 100
 
-#### ここから
+### ここから
 
 [教材のurl](https://www.udemy.com/course/understanding-typescript-jp/learn/lecture/17812928#content)
 
-#### file 
+### file 
 Desktop/TypeScript/Understanding-ts
