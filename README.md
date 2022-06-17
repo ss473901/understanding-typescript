@@ -9,7 +9,7 @@
 
 ## 教材
 
-[url](https://www.udemy.com/course/understanding-typescript-jp/learn/lecture/17812928#content)
+[url]([https://www.udemy.com/course/understanding-typescript-jp/learn/lecture/17812928#content](https://www.udemy.com/course/understanding-typescript-jp/learn/lecture/18173586#content))
 
 ## file 
 Desktop/TypeScript/Understanding-ts
