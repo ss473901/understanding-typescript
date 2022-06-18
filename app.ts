@@ -1,35 +1,36 @@
-// Tuple型は配列に対して要素の数と
-// それぞれの要素の型を指定することができる
-// TypeScript独自の型。
-// Tuple型を使うと配列に対して誤った数の要素が指定されたり
-// 数字に対して文字列の値が入力されたりといったエラーを
-// 型のチェックによって防ぐことができます
+////Enum型とは
+// Enum型は定数の集合に対して名前を付けて管理することができる
+// Enum型を定義するには{}（中括弧)を使う
+// 中括弧の中に定数のリストを定義します
+// それらの定数には自動的にゼロから始まるnumberが割り当てられます
+// Enum型はある定数の集合の一覧に名前を付けて管理をするのに便利
+// Enum型は列挙型とも呼ばれます
 
-const person: {
-  name: string;
-  age: number;
-  hobbies: string[]; //Array型
-  role: [number, string]; //tuple型
-} = {
+////下記のような定義を仮定
+// Admin（管理者）：0
+// Read only user（読み取り専用）：1
+// Author（作者）：2
+
+////下記の書き方と同じ
+// const ADMIN = 0;
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
+
+////Enumの書き方
+//自動で数字が振り分けられる
+enum Role {
+  ADMIN, //0
+  READ_ONLY, //1
+  AUTHOR, //2
+}
+
+const person = {
   name: `yota`,
   age: 30,
   hobbies: [`Sports`, `Cooking`],
-  role: [2, `author`],
+  role: Role.ADMIN,
 };
 
-// person.role.push(`admin`);
-
-//// 配列の2個目の値にnumberを入れようとしているためエラー
-// person.role[1] = 10;
-
-//// Tupleは2つの値を入れるように定義されているのでエラー
-// person.role = [0, `admin`, `user`]
-
-let favoriteActivities: string[];
-favoriteActivities = [`Sports`];
-
-console.log(person.name);
-
-for (const hobby of person.hobbies) {
-  console.log(hobby.toUpperCase());
+if (person.role === Role.ADMIN) {
+  console.log(`管理者ユーザ`);
 }
