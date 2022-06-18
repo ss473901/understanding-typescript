@@ -5,6 +5,7 @@
 // 数字に対して文字列の値が入力されたりといったエラーを
 // 型のチェックによって防ぐことができます
 
+
 const person: {
   name: string;
   age: number;
