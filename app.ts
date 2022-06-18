@@ -13,8 +13,8 @@ const person: {
 } = {
   name: `yota`,
   age: 30,
-  hobbies: [`Sports`, `Cooking`],
-  role: [2, `author`],
+  hobbies: [`Sports`, `Cooking`], //Array型
+  role: [2, `author`], //tuple型
 };
 
 // person.role.push(`admin`);
