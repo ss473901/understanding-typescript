@@ -8,8 +8,8 @@
 const person: {
   name: string;
   age: number;
-  hobbies: string[];
-  role: [number, string];
+  hobbies: string[]; //Array型
+  role: [number, string]; //tuple型
 } = {
   name: `yota`,
   age: 30,
